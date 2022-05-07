@@ -14,7 +14,6 @@ const {
   REACT_APP_UPSIDEDOWN_TIMEOUT,
   REACT_APP_SERVER_ENV,
 } = process.env;
-console.log(REACT_APP_SERVER_ENV);
 
 const strangerThingsConfig = {
   url: REACT_APP_HAWKINS_URL,
