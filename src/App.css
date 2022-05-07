@@ -52,6 +52,8 @@
 
   transition: background-position 2.5s, background-image 3s ease-in-out;
   -webkit-transition: background-position 2.5s, background-image 3s ease-in-out;
+
+  position: relative;
 }
 
 .stranger-things {
@@ -98,4 +100,15 @@
 .strangerfy > div > table {
   width: 900px;
   text-align: left;
+}
+
+.development-environment {
+  position: absolute;
+  right: 0;
+  background-color: #922c2e;
+  color: #eee;
+  padding: 10px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 12px;
 }

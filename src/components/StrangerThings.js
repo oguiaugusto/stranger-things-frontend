@@ -12,7 +12,9 @@ const {
   REACT_APP_HAWKINS_TIMEOUT,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
+  REACT_APP_SERVER_ENV,
 } = process.env;
+console.log(REACT_APP_SERVER_ENV);
 
 const strangerThingsConfig = {
   url: REACT_APP_HAWKINS_URL,
@@ -121,6 +123,11 @@ class StrangerThings extends React.Component {
           hereIsTheUpsideDownWorld,
         )}` }
       >
+        {
+          REACT_APP_SERVER_ENV === 'development' ? (
+            <p className="development-environment">Em desenvolvimento</p>
+          ) : null
+        }
         <div className="content strangerfy">
           <div className="change-reality">
             <button type="button" onClick={ this.changeRealityClick }>
